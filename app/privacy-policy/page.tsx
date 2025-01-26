@@ -2,26 +2,21 @@ import Link from "next/link";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 
-// CHATGPT PROMPT TO GENERATE YOUR PRIVACY POLICY — replace with your own data 👇
-
-// 1. Go to https://chat.openai.com/
-// 2. Copy paste bellow
-// 3. Replace the data with your own (if needed)
-// 4. Paste the answer from ChatGPT directly in the <pre> tag below
+// CHATGPT PROMPT TO GENERATE YOUR PRIVACY POLICY
 
 // You are an excellent lawyer.
 
 // I need your help to write a simple privacy policy for my website. Here is some context:
-// - Website: https://shipfa.st
-// - Name: ShipFast
-// - Description: A JavaScript code boilerplate to help entrepreneurs launch their startups faster
-// - User data collected: name, email and payment information
+// - Website: https://thewhisk.dev
+// - Name: theWhisk
+// - Description: A personal portfolio and resume for a software engineer
+// - User data collected: name, email if provided
 // - Non-personal data collection: web cookies
-// - Purpose of Data Collection: Order processing
+// - Purpose of Data Collection: Communication if solicited
 // - Data sharing: we do not share the data with any other parties
 // - Children's Privacy: we do not collect any data from children
-// - Updates to the Privacy Policy: users will be updated by email
-// - Contact information: marc@shipfa.st
+// - Updates to the Privacy Policy: reflected here
+// - Contact information: william@thewhisk.dev
 
 // Please write a simple privacy policy for my site. Add the current date.  Do not add or explain your reasoning. Answer:
 
@@ -57,51 +52,29 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2023-08-25
+          {`Effective Date: January 26, 2025
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+            Welcome to theWhisk.dev. Your privacy is important to us. This policy outlines how we handle your information.
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+            1. Information We Collect
+            Personal Data: Name and email, if voluntarily provided.
+            Non-Personal Data: Web cookies to enhance website functionality.
+            2. Purpose of Data Collection
+            We collect personal data solely for communication purposes when solicited by you.
 
-1. Information We Collect
+            3. Data Sharing
+            We do not share your data with any third parties.
 
-1.1 Personal Data
+            4. Children's Privacy
+            We do not knowingly collect any data from children. If you believe a child has provided us with their information, please contact us at william@thewhisk.dev.
 
-We collect the following personal information from you:
+            5. Updates to This Policy
+            This privacy policy may be updated periodically. Any changes will be reflected on this page.
 
-Name: We collect your name to personalize your experience and communicate with you effectively.
-Email: We collect your email address to send you important information regarding your orders, updates, and communication.
-Payment Information: We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+            6. Contact Information
+            If you have any questions or concerns about this privacy policy, please contact us at william@thewhisk.dev.
 
-1.2 Non-Personal Data
-
-We may use web cookies and similar technologies to collect non-personal information such as your IP address, browser type, device information, and browsing patterns. This information helps us to enhance your browsing experience, analyze trends, and improve our services.
-
-2. Purpose of Data Collection
-
-We collect and use your personal data for the sole purpose of order processing. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
-
-3. Data Sharing
-
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
-
-4. Children's Privacy
-
-ShipFast is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
-
-5. Updates to the Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and we may notify you via email about significant changes.
-
-6. Contact Information
-
-If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
-
-Email: marc@shipfa.st
-
-For all other inquiries, please visit our Contact Us page on the Website.
-
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+            Thank you for trusting theWhisk.dev.`}
         </pre>
       </div>
     </main>

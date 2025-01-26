@@ -35,25 +35,25 @@ const features = [
   },
   {
     title: "Prioritize features",
-    description: "Users upvote features they want. You know what to ship next.",
+    description: "Users upvote features they want.",
     styles: "md:col-span-2 bg-base-300 text-base-content",
     demo: (
       <div className="px-6 max-w-[600px] flex flex-col gap-4 overflow-hidden">
         {[
           {
             text: "Add LemonSqueezy integration to the boilerplate",
-            secondaryText: "Yes, ship this! ✅",
+            secondaryText: "Yes!",
             votes: 48,
             transition: "group-hover:-mt-36 group-hover:md:-mt-28 duration-500",
           },
           {
             text: "A new pricing table for metered billing",
-            secondaryText: "Maybe ship this 🤔",
+            secondaryText: "Maybe",
             votes: 12,
           },
           {
             text: "A new UI library for the dashboard",
-            secondaryText: "But don't ship that ❌",
+            secondaryText: "No",
             votes: 1,
           },
         ].map((feature, i) => (
@@ -193,15 +193,15 @@ const features = [
             id: 1,
             text: "Can we have a feature to add a custom domain to IndiePage?",
             userImg:
-              "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
-            userName: "Marc Lou",
+              "",
+            userName: "John",
             createdAt: "2024-09-01T00:00:00Z",
           },
           {
             id: 2,
-            text: "I'd definitelly pay for that 🤩",
+            text: "I'd definitelly pay for that",
             userImg:
-              "https://pbs.twimg.com/profile_images/1778434561556320256/knBJT1OR_400x400.jpg",
+              "",
             userName: "Dan K.",
             createdAt: "2024-09-02T00:00:00Z",
             transition:
@@ -242,7 +242,7 @@ const FeaturesGrid = () => {
     <section className="flex justify-center items-center w-full bg-base-200/50 text-base-content py-20 lg:py-32">
       <div className="flex flex-col max-w-[82rem] gap-16 md:gap-20 px-4">
         <h2 className="max-w-3xl font-black text-4xl md:text-6xl tracking-[-0.01em]">
-          Ship features <br /> users{" "}
+          Features <br /> users{" "}
           <span className="underline decoration-dashed underline-offset-8 decoration-base-300">
             really want
           </span>

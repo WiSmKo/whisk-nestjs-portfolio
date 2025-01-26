@@ -2,26 +2,21 @@ import Link from "next/link";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 
-// CHATGPT PROMPT TO GENERATE YOUR TERMS & SERVICES — replace with your own data 👇
-
-// 1. Go to https://chat.openai.com/
-// 2. Copy paste bellow
-// 3. Replace the data with your own (if needed)
-// 4. Paste the answer from ChatGPT directly in the <pre> tag below
+// CHATGPT PROMPT TO GENERATE YOUR TERMS OF SERVICE
 
 // You are an excellent lawyer.
 
 // I need your help to write a simple Terms & Services for my website. Here is some context:
-// - Website: https://shipfa.st
-// - Name: ShipFast
-// - Contact information: marc@shipfa.st
-// - Description: A JavaScript code boilerplate to help entrepreneurs launch their startups faster
-// - Ownership: when buying a package, users can download code to create apps. They own the code but they do not have the right to resell it. They can ask for a full refund within 7 day after the purchase.
-// - User data collected: name, email and payment information
+// - Website: https://thewhisk.dev
+// - Name: theWhisk
+// - Contact information: william@thewhisk.dev
+// - Description: A personal portfolio and resume for a software engineer
+// - Ownership: The information is purely for reference, it is personal and not for commercial use and cannot be reused or copied.
+// - User data collected: name and email if provided
 // - Non-personal data collection: web cookies
-// - Link to privacy-policy: https://shipfa.st/privacy-policy
-// - Governing Law: France
-// - Updates to the Terms: users will be updated by email
+// - Link to privacy-policy: https://thewhisk.dev/privacy-policy
+// - Governing Law: Malta
+// - Updates to the Terms: this page
 
 // Please write a simple Terms & Services for my site. Add the current date. Do not add or explain your reasoning. Answer:
 
@@ -57,39 +52,36 @@ const TOS = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: September 26, 2023
+          {`Effective Date: January 26, 2025
 
-Welcome to ShipFast!
+            Welcome to theWhisk.dev! By accessing or using this website, you agree to the following terms and conditions.
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+            1. Ownership and Use of Content
+            The content provided on theWhisk.dev is personal and for reference purposes only. All rights are reserved, and no material may be reused, copied, or distributed without explicit written consent.
 
-1. Description of ShipFast
+            2. No Commercial Use
+            The website and its content are not intended for commercial use. Any unauthorized commercial use is strictly prohibited.
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+            3. Data Collection
+            The website may collect the following data:
 
-2. Ownership and Usage Rights
+            Personal Data: Name and email, if voluntarily provided.
+            Non-Personal Data: Web cookies to enhance website functionality.
+            For details on how this data is handled, refer to our Privacy Policy.
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+            4. Privacy Policy
+            For more information on how we handle privacy matters, please refer to our Privacy Policy.
 
-3. User Data and Privacy
+            5. Updates to the Terms
+            These terms may be updated periodically. Any changes will be reflected on this page.
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+            6. Governing Law
+            These terms are governed by and construed in accordance with the laws of Malta.
 
-4. Non-Personal Data Collection
+            7. Contact Information
+            If you have any questions or concerns, please contact us at william@thewhisk.dev.
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
-
-5. Governing Law
-
-These Terms are governed by the laws of France.
-
-6. Updates to the Terms
-
-We may update these Terms from time to time. Users will be notified of any changes via email.
-
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
-
-Thank you for using ShipFast!`}
+            Thank you for visiting theWhisk.dev!`}
         </pre>
       </div>
     </main>
