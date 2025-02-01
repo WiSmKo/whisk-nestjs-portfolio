@@ -14,16 +14,16 @@ const links: {
   label: string;
 }[] = [
   {
-    href: "/#pricing",
-    label: "Pricing",
+    href: "/#cv",
+    label: "CV",
   },
   {
-    href: "/#testimonials",
-    label: "Reviews",
+    href: "/#projects",
+    label: "Projects",
   },
   {
     href: "/#faq",
-    label: "FAQ",
+    label: "Blog",
   },
 ];
 
@@ -56,13 +56,18 @@ const Header = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
+              className="w-10"
               placeholder="blur"
               priority={true}
-              width={32}
-              height={32}
+              width={50}
+              height={50}
             />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            <span style={{
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                color: 'inherit',
+                textDecoration: 'none'}}>{config.appName}</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -105,7 +110,7 @@ const Header = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        {/* <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div> */}
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -172,7 +177,7 @@ const Header = () => {
             </div>
             <div className="divider"></div>
             {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
+            {/* <div className="flex flex-col">{cta}</div> */}
           </div>
         </div>
       </div>

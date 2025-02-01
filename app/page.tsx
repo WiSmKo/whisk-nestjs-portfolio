@@ -17,10 +17,10 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
-        <FeaturesAccordion />
+        {/* <FeaturesAccordion />
         <Pricing />
         <FAQ />
-        <CTA />
+        <CTA /> */}
       </main>
       <Footer />
     </>

@@ -3,12 +3,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "whisk-nextjs-portfolio",
+  appName: "theWhisk.dev",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Personal Portfolio for sofware engineer William Smallman-Koepf.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "whisk.dev",
+  domainName: "thewhisk.dev",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (resend.supportEmail) otherwise customer support won't work.
     id: "",
