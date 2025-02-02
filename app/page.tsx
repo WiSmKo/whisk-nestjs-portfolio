@@ -2,13 +2,20 @@ import { Suspense } from 'react'
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
-import FeaturesAccordion from "@/components/FeaturesAccordion";
-import Pricing from "@/components/Pricing";
-import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import TechnologiesAccordion from '@/components/TechnologiesAccordion';
+import Technology,{ ITechnology } from '@/models/Technology';
+import connectMongo from '@/libs/mongoose';
 
-export default function Home() {
+interface PageProps {
+  technologies: ITechnology[];
+}
+
+
+export default async function Home() {
+  await connectMongo();
+  const technologies: ITechnology[] = await Technology.find({});
+
   return (
     <>
       <Suspense>
@@ -17,10 +24,7 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
-        {/* <FeaturesAccordion />
-        <Pricing />
-        <FAQ />
-        <CTA /> */}
+        <TechnologiesAccordion technologies={technologies} />
       </main>
       <Footer />
     </>

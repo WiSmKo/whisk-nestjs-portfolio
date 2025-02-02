@@ -18,6 +18,10 @@ const links: {
     label: "CV",
   },
   {
+    href: "/#technologies",
+    label: "Technologies",
+  },
+  {
     href: "/#projects",
     label: "Projects",
   },
