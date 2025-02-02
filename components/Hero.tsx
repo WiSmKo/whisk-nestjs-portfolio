@@ -13,11 +13,11 @@ interface HeroContactLinkProps {
 const contactLinks: HeroContactLinkProps[] = [
   {
     svg: githubsvg.src,
-    url: "https://github.com/yourusername",
+    url: "https://github.com/wismko",
   },
   {
     svg: linkedinsvg.src,
-    url: "https://www.linkedin.com/in/yourprofile",
+    url: "https://www.linkedin.com/in/wismko/",
   },
 ];
 
