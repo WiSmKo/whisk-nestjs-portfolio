@@ -22,6 +22,7 @@ const technologySchema = new mongoose.Schema({
     },
     image: {
         type: Object,
+        private: true,
         url: {
             type: String,
         },

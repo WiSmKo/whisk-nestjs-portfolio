@@ -30,7 +30,7 @@ const Step = ({ emoji, text }: { emoji: string; text: string }) => {
   );
 };
 
-const Problem = () => {
+const Intro = () => {
   return (
     <section className="bg-neutral text-neutral-content">
       <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
@@ -57,4 +57,4 @@ const Problem = () => {
   );
 };
 
-export default Problem;
+export default Intro;

@@ -1,10 +1,25 @@
 import Image from "next/image";
 import williamProfile from "@/app/william.jpg";
 import config from "@/config";
+import linkedinsvg from "@/app/linkedin.svg";
+import githubsvg from "@/app/github.svg";
+import { link } from "fs";
 
-const startYear = new Date(2021, 4, 1);
-const currentYear = new Date();
-const years = Math.floor((currentYear.getTime() - startYear.getTime()) / 1000 / 60 / 60 / 24 / 365);
+interface HeroContactLinkProps {
+  svg: string;
+  url: string;
+}
+
+const contactLinks: HeroContactLinkProps[] = [
+  {
+    svg: githubsvg.src,
+    url: "https://github.com/yourusername",
+  },
+  {
+    svg: linkedinsvg.src,
+    url: "https://www.linkedin.com/in/yourprofile",
+  },
+];
 
 const Hero = () => {
   return (
@@ -27,6 +42,13 @@ const Hero = () => {
           priority={true}
           //style={{ borderRadius: "50%" }} // border-radius="50%"
         />
+      </div>
+      <div className="flex gap-4">
+        {contactLinks.map(({ svg, url }, index) => (
+          <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+            <img src={svg} alt="Contact link" className="w-8 h-8" />
+          </a>
+        ))}
       </div>
     </section>
   );

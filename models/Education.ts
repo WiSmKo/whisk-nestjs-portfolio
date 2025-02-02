@@ -1,6 +1,18 @@
 import mongoose from "mongoose";
 import toJSON from "./plugins/toJSON";
 
+export interface IEducation extends Document {
+    school: string;
+    degree: string;
+    startDate: Date;
+    endDate?: Date;
+    description: string;
+    image?: {
+        url: string;
+        alt: string;
+    }
+}
+
 const educationSchema = new mongoose.Schema({
     school: {
         type: String,
@@ -23,10 +35,16 @@ const educationSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
-    imageUrl: {
-        type: String,
-        trim: true,
-    }
+    image: {
+        type: Object,
+        private: true,
+        url: {
+            type: String,
+        },
+        alt: {
+            type: String,
+        }
+      }
 },{
     timestamps: true,
     toJSON: { virtuals: true },

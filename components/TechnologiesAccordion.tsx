@@ -10,11 +10,7 @@ interface accordionProps {
 }
 
 // An SEO-friendly accordion component including the title and a description (when clicked.)
-const Item = ({
-  technology,
-  isOpen,
-  setTechnologySelected,
-}: {
+const Item = ({ technology, isOpen, setTechnologySelected }: {
   index: number;
   technology: ITechnology;
   isOpen: boolean;

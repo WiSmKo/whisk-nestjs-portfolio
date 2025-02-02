@@ -21,14 +21,14 @@ const links: {
     href: "/#technologies",
     label: "Technologies",
   },
-  {
-    href: "/#projects",
-    label: "Projects",
-  },
-  {
-    href: "/#faq",
-    label: "Blog",
-  },
+  // {
+  //   href: "/#projects",
+  //   label: "Projects",
+  // },
+  // {
+  //   href: "/#blog",
+  //   label: "Blog",
+  // },
 ];
 
 const cta: JSX.Element = <ButtonSignin extraStyle="btn-primary" />;
