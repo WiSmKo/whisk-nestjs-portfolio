@@ -19,10 +19,15 @@ const experienceSchema = new mongoose.Schema({
       trim: true,
       required: true,
     },
-    role: {
+    title: {
       type: String,
       trim: true,
       required: true,
+    },
+    roleType: {
+      type: String,
+      enum: ["full-stack", "back-end", "front-end", "mobile", "other"],
+      trim: true,
     },
     startDate: {
       type: Date,
@@ -35,6 +40,11 @@ const experienceSchema = new mongoose.Schema({
       type: String,
       trim: true,
       required: true,
+    },
+    employmentType: {
+      type: String,
+      enum: ["volunteer", "full-time", "part-time", "contract", "internship"],
+      trim: true,
     },
     image: {
       type: Object,

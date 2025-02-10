@@ -20,16 +20,35 @@ export async function GET() {
         const sampleExperience = [
             {
                 organisation: "PhoenixNAP",
-                role: "Software Engineer",
+                title: "Software Engineer",
                 startDate: new Date("2022-06-20"),
                 description: "Working as a software engineer for a company providing cloud-based infrastructure services.",
+                employmentType: "full-time"
             },
             {
                 organisation: "Colonel Duck",
-                role: "Software Developer",
+                title: "Software Developer",
                 startDate: new Date("2021-04-01"),
                 endDate: new Date("2022-04-01"),
                 description: "Working as a software developer at a creative agency.",
+                employmentType: "full-time"
+            },
+            {
+                organisation:"edX",
+                title: "Teaching Assistant",
+                startDate: new Date("2022-12-01"),
+                endDate: new Date("2023-03-01"),
+                description: "Working on a frontend developer bootcamp to assist the tutor and the aspiring developers.",
+                employmentType: "part-time"
+            },
+            {
+                organisation:"Lykkeli",
+                title: "Full-Stack Developer",
+                roleType: "full-stack",
+                startDate: new Date("2022-12-01"),
+                endDate: new Date("2023-03-01"),
+                description: "Assisting a non-profit organization to develop their website and web application.",
+                employmentType: "volunteer"
             }
         ]
 
