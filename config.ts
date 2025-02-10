@@ -9,12 +9,6 @@ const config = {
     "CV site for sofware engineer William Smallman-Koepf.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "thewhisk.dev",
-  crisp: {
-    // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (resend.supportEmail) otherwise customer support won't work.
-    id: "",
-    // Hide Crisp by default, except on route "/". Crisp is toggled with <ButtonSupport/>. If you want to show Crisp on every routes, just remove this below
-    onlyShowOnRoutes: ["/"],
-  },
   aws: {
     // If you use AWS S3/Cloudfront, put values in here
     bucket: "bucket-name",
@@ -23,9 +17,9 @@ const config = {
   },
   resend: {
     // REQUIRED — Email 'From' field to be used when sending magic login links
-    fromNoReply: `theWhisk <noreply@resend.whisk.dev>`,
+    fromNoReply: `theWhisk <noreply@mail.thewhisk.dev>`,
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
-    fromAdmin: `William <william@resend.whisk.dev>`,
+    fromAdmin: `William <admin@mail.thewhisk.dev>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
     supportEmail: "william@thewhisk.dev",
   },
